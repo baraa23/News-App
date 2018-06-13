@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundItem"
+    android:padding="@dimen/padding16"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/news_title"
+        style="@style/titleAndCategory"
+        tools:text="Title of the news "
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/text_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/news_category"
+        style="@style/titleAndCategory"
+        tools:text="News Category"
+        android:textColor="@color/categoryTextColor"
+        android:textSize="@dimen/text_category"
+        android:paddingTop="@dimen/paddingtop8"
+        android:layout_below="@id/news_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <TextView
+        android:id="@+id/news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="news Author"
+        android:textColor="@color/dateAndPublisher"
+        android:textSize="@dimen/text_author"
+        android:paddingTop="@dimen/paddingtop8"
+        android:layout_below="@id/news_category"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="news date"
+        android:textColor="@color/dateAndPublisher"
+        android:textSize="@dimen/text_date"
+        android:paddingTop="@dimen/paddingtop8"
+        android:layout_below="@id/news_category"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

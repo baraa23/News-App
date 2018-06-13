@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding8">8dp</dimen>
+
+    <dimen name="padding16">16dp</dimen>
+
+    <dimen name="paddingtop8">8dp</dimen>
+    <dimen name="text_category">18sp</dimen>
+    <dimen name="text_title">22sp</dimen>
+    <dimen name="text_author">14sp</dimen>
+    <dimen name="text_date">14sp</dimen>
+
+
+</resources>
