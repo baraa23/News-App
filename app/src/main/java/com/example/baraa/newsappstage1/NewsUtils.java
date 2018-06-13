@@ -24,10 +24,15 @@ import java.util.List;
  */
 public final class NewsUtils {
 
+    public static final int URL_READ_TIME_OUT = 10000;
+
+    public static final int URL_CONNECT_TIME_OUT = 15000;
+
     /**
      * Tag for the log messages
      */
     private static final String LOG_TAG = NewsUtils.class.getSimpleName();
+
 
     /**
      * Create a private constructor because no one should ever create a {@link NewsUtils} object.
@@ -89,8 +94,8 @@ public final class NewsUtils {
         InputStream inputStream = null;
         try {
             urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setReadTimeout(10000 /* milliseconds */);
-            urlConnection.setConnectTimeout(15000 /* milliseconds */);
+            urlConnection.setReadTimeout(URL_READ_TIME_OUT /* milliseconds */);
+            urlConnection.setConnectTimeout(URL_CONNECT_TIME_OUT /* milliseconds */);
             urlConnection.setRequestMethod("GET");
             // Send a request to connect
             urlConnection.connect();
@@ -203,12 +208,12 @@ public final class NewsUtils {
 
 
                 if (tagsLenght == 1) {
-                    // Create a JSONObject for author
-                    JSONObject currentNewsAuthor = currentNewsAuthorArray.getJSONObject(0);
-
-                    String newsAuthor1 = currentNewsAuthor.getString("webTitle");
-
-                    newsAuthor = "by: " + newsAuthor1;
+                    StringBuilder artAuthorBuilder = new StringBuilder();
+                    for (int j = 0; j < currentNewsAuthorArray.length(); j++) {
+                        JSONObject objectPositionOne = currentNewsAuthorArray.getJSONObject(j);
+                        artAuthorBuilder.append(objectPositionOne.getString("webTitle")).append(". ");
+                    }
+                    newsAuthor = "by: " + artAuthorBuilder.toString();
 
                 }
 
