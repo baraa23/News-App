@@ -1,10 +1,53 @@
 <resources>
-    <string name="app_name">News App, Stage 1</string>
+    <string name="app_name">News App</string>
 
     <!-- Text to display in the list when there are no NEWS to display -->
     <string name="no_news">No News Found. Please try again later</string>
 
     <!-- Error message when there is no internet connectivity -->
     <string name="no_internet_connection">No internet connection.</string>
+
+
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+
+    <!-- for section preferences -->
+    <string name="settings_section_label">Section</string>
+    <string name="settings_section_key" translatable="false">section</string>
+    <string name="settings_section_default" translatable="false">business</string>
+
+    <!-- Label for the business news [CHAR LIMIT=20] -->
+    <string name="settings_business_label">business</string>
+    <string name="settings_business_value" translatable="false">business</string>
+
+    <!-- Label for football news [CHAR LIMIT=20] -->
+    <string name="settings_football_label">football</string>
+    <string name="settings_football_value" translatable="false">football</string>
+
+    <!-- Label for environment news [CHAR LIMIT=20] -->
+    <string name="settings_environment_label">environment</string>
+    <string name="settings_environment_value" translatable="false">environment</string>
+
+    <!-- Label for science news [CHAR LIMIT=20] -->
+    <string name="settings_science_label">science</string>
+    <string name="settings_science_value" translatable="false">science</string>
+
+    <!-- Label for technology news [CHAR LIMIT=20] -->
+    <string name="settings_technology_label">technology</string>
+    <string name="settings_technology_value" translatable="false">technology</string>
+
+    <!-- for date preferences -->
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
+
+    <!-- Label for the oldest news [CHAR LIMIT=20] -->
+    <string name="settings_order_by_oldest_label">oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!-- Label for newest news [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
 
 </resources>
